@@ -1,7 +1,7 @@
 # 技术交流群（欢迎加入）
 - 开发交流，技术分享，问题答疑，功能建议收集，版本更新通知！
 
- ![输入图片说明](https://images.gitee.com/uploads/images/2021/1112/080832_6200356d_9240987.gif "未命名-1.gif")
+ ![输入图片说明](https://images.gitee.com/uploads/images/2021/1119/115524_eda2b548_9240987.png "code.png")
 
 ### 项目介绍
 

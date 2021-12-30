@@ -1,5 +1,5 @@
  # 技术交流 
-- 开发交流，技术分享，问题答疑，功能建议收集，版本更新通知！
+- 开发交流，技术分享，问题答疑，功能建议收集，版本更新通知！！
 
  ![输入图片说明](https://gitee.com/minzonetech/CCSmartPhoto/raw/master/cc.png)
 

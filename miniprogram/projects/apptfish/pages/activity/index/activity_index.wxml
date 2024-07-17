@@ -1,0 +1,48 @@
+<view wx:if="{{!isLoad}}" class="margin-top load loading text-l load-project"></view>
+<block wx:else>
+
+	<cmpt-comm-list type="activity-list" _params="{{_params}}" search="{{search||''}}" _menus="{{sortMenus}}" _items="{{sortItems}}" sortMenusDefaultIndex="0" route="activity/list" topBottom="120" isTotalMenu="{{true}}" placeholder="搜索" bind:list="bindCommListCmpt">
+
+		<view class="list">
+			<view class="item shadow-project" wx:for="{{dataList.list}}" wx:key="key" bindtap="url" data-url="../detail/activity_detail?id={{item._id}}">
+				<view class="top">
+					<text class="mark">{{item.ACTIVITY_CATE_NAME}}</text>
+					<image class="loading shadow-project" mode="aspectFill" lazy-load="{{true}}" src="{{item.ACTIVITY_OBJ.cover[0]}}" />
+				</view>
+
+				<view class="bottom">
+					<view class="left">
+						<view class="title content-cut-two">{{item.ACTIVITY_TITLE}}</view>
+						<view class="desc content-cut-one">{{item.time}} </view>
+					</view>
+
+					<view class="right">
+						<view class="status">
+							<text class="bg-yellow text-white" wx:if="{{item.statusDesc=='报名中'}}">立即报名</text>
+							<text class="bg-grey light" wx:else>{{item.statusDesc}}</text>
+						</view>
+					</view>
+
+				</view>
+
+
+			</view>
+		</view>
+
+
+
+
+		<!--load begin-->
+		<import src="../../../../../tpls/public/list_load_tpl.wxml" />
+		<template is="listLoadTpl" data="{{skin:'load-project',dataList}}" />
+		<!--load end-->
+
+	</cmpt-comm-list>
+
+
+	<block wx:if="{{skin.IS_SUB}}">
+		<import src="../../tpls/menu_tpl.wxml" />
+		<template is="menuTpl" data="{{skin,curMenu:'activity_index',returnHome}}" />
+	</block>
+
+</block>

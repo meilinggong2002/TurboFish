@@ -1,0 +1,127 @@
+@import "../../../../../style/public/comm_box_list.wxss";
+@import "../../../style/skin.wxss";
+
+
+.main {
+	padding: 0rpx;
+}
+
+.list {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 20rpx;
+}
+
+.list .item {
+	position: relative;
+	width: 100%;
+	display: flex;
+	background-color: #fff;
+	padding: 20rpx;
+	overflow: hidden;
+	border-radius: 20rpx;
+	margin-bottom: 30rpx;
+}
+
+.list .item .left {
+	margin-right: 10rpx;
+	position: relative;
+	overflow: hidden;
+}
+
+.list .item .left .mark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 22rpx;
+	background-color: var(--projectColor);
+	color: #fff;
+	z-index: 9;
+	padding: 4rpx 6rpx;
+	border-bottom-right-radius: 12rpx;
+	border-top-left-radius: 12rpx;
+}
+
+.list .item .left image {
+	width: 180rpx;
+	height: 200rpx;
+	border-radius: 12rpx;
+}
+
+.list .item .right {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	padding: 0rpx 10rpx;
+	align-items: flex-start;
+	padding-bottom: 5rpx;
+	justify-content: space-between;
+	position: relative;
+}
+
+.list .item .right .title {
+	width: 100%;
+	font-size: 28rpx;
+	padding: 0;
+	color: #000;
+	margin-bottom: 10rpx;
+}
+
+.list .item .right .address {
+	width: 100%;
+	font-size: 24rpx;
+	border-bottom: 2rpx dashed #999;
+	color: #999;
+	padding: 10rpx 0;
+	margin-bottom: 16rpx;
+	width: 450rpx;
+}
+
+.list .item .right .tag-list {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.list .item .right .tag-list>text {
+	padding: 4rpx 10rpx;
+	font-size: 22rpx;
+	margin-right: 10rpx;
+	margin-bottom: 10rpx;
+	background-color: #f2f2f2;
+	border-radius: 6rpx;
+	color: #999;
+}
+
+.list .item .right .line {
+	width: 100%;
+	color: #999;
+	font-size: 22rpx;
+	padding: 6rpx 0;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.list .item .right .tag-list .tag {
+	padding: 5rpx 10rpx;
+	background-color: #f2f2f2;
+	margin-right: 5rpx;
+	border-radius: 5rpx;
+	margin-bottom: 11rpx;
+	margin-top: 5rpx;
+	color: #999;
+}
+
+.list .item .right .oprt {
+	font-size: 24rpx;
+	background-color: var(--projectCompareColor);
+	color: #fff;
+	padding: 8rpx 24rpx;
+	border-radius: 30rpx;
+	position: absolute;
+	bottom: -6rpx;
+	right: 10rpx;
+	z-index: 9;
+}
